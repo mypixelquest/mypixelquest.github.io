@@ -1,6 +1,83 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: My Pixel Quest
+hero:
+  eyebrow: "Apple big bento"
+  title: "Tactile, cinematic, and fast."
+  body: "I craft product design systems, launch-ready sites, and interactive experiments with an Apple-inspired big bento aesthetic."
+  actions:
+    - label: "View work"
+      url: "#work"
+      style: "primary"
+    - label: "About"
+      url: "/about/"
+      style: "ghost"
+stats:
+  - label: "Products launched"
+    value: "18"
+  - label: "Avg. redesign lift"
+    value: "+24%"
+  - label: "Response time"
+    value: "<24h"
+bento:
+  - title: "Product design systems"
+    body: "Design languages that scale across marketing and product surfaces with crisp typography and consistent spacing."
+    tag: "Systems"
+    size: "wide"
+    link_text: "System snapshots"
+    link: "/about/"
+    pills:
+      - "Components"
+      - "Tokens"
+      - "Docs"
+  - title: "Interactive experiments"
+    body: "Procedural visuals, haptics, and motion studies built directly in the browser."
+    tag: "R&D"
+    size: "tall"
+    link_text: "Open the lab"
+    link: "#"
+    pills:
+      - "Canvas"
+      - "Microinteractions"
+      - "Audio-reactive"
+  - title: "Launch sites"
+    body: "High-polish marketing and portfolio sites with performance budgets and cinematic storytelling."
+    tag: "Ship"
+    link_text: "See launch"
+    link: "#"
+    pills:
+      - "Static-first"
+      - "Perf budgets"
+      - "Story"
+  - title: "Dashboards"
+    body: "Clear, legible data experiences with purposeful hierarchy and responsive layouts."
+    tag: "Product"
+    link_text: "Dashboards"
+    link: "#"
+    pills:
+      - "Data viz"
+      - "Design tokens"
+  - title: "Creative direction"
+    body: "Lighting, gradients, and spatial rhythm inspired by Apple’s big bento vibe."
+    tag: "Direction"
+    link_text: "Moodboard"
+    link: "#"
+    pills:
+      - "Color scripts"
+      - "Art direction"
+  - title: "Collaboration"
+    body: "Documentation, handoff, and async updates so teams stay unblocked."
+    tag: "Process"
+    link_text: "How I work"
+    link: "/about/"
+    pills:
+      - "Figma"
+      - "Notion"
+      - "Dev-ready specs"
+footer_notes:
+  eyebrow: "Availability"
+  title: "Select new collaborations"
+  body: "Have a product to level up? I take on a limited number of new projects each quarter."
+  link_text: "Start a project"
+  link: "/about/"
 ---

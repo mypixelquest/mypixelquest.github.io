@@ -4,15 +4,20 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I’m the designer/developer behind My Pixel Quest. I build lean, fast, and expressive web experiences—often blending product thinking with playful visuals.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Approach
+- Clarity first: crisp typography, focused layouts, and fast loads.
+- Small bets: prototype quickly, test ideas early, iterate with real data.
+- Maintainable delivery: static-first when possible, well-documented handoffs.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## What I work on
+- Portfolio and marketing sites that feel polished and performant.
+- UI systems and component libraries that scale.
+- Creative experiments that push interaction and motion on the web.
 
+## Tooling
+Jekyll + GitHub Pages for simple, reliable hosting. Comfortable across modern front-end stacks when projects call for it.
 
-[jekyll-organization]: https://github.com/jekyll
+## Elsewhere
+Add your contact and social links in `_config.yml` to surface them across the site once you’re ready.

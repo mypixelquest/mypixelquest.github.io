@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<main class="bento-page">
+  <section class="bento-hero">
+    <div class="bento-aurora bento-aurora-1"></div>
+    <div class="bento-aurora bento-aurora-2"></div>
+    {% if page.hero.eyebrow %}
+      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
+    {% endif %}
+    <h1 class="hero-title">{{ page.hero.title | default: page.title }}</h1>
+    {% if page.hero.body %}
+      <p class="hero-lede">{{ page.hero.body }}</p>
+    {% endif %}
+    {% if page.hero.actions %}
+      <div class="hero-actions">
+        {% for action in page.hero.actions %}
+          <a
+            class="btn {% if action.style == 'ghost' %}btn-ghost{% else %}btn-primary{% endif %}"
+            href="{{ action.url | default: '#' }}"
+          >
+            {{ action.label }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.stats %}
+      <div class="hero-stats">
+        {% for stat in page.stats %}
+          <div class="stat">
+            <span class="stat-value">{{ stat.value }}</span>
+            <span class="stat-label">{{ stat.label }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  {% if page.bento %}
+    <section id="work" class="bento-grid">
+      {% for item in page.bento %}
+        <article class="bento-card {% if item.size == 'wide' %}span-2{% elsif item.size == 'tall' %}span-2-rows{% endif %}">
+          <div class="card-top">
+            {% if item.tag %}
+              <span class="pill">{{ item.tag }}</span>
+            {% endif %}
+            {% if item.link %}
+              <a class="card-link" href="{{ item.link }}">
+                {{ item.link_text | default: "Open" }} ↗
+              </a>
+            {% endif %}
+          </div>
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-body">{{ item.body }}</p>
+          {% if item.pills %}
+            <div class="pill-row">
+              {% for pill in item.pills %}
+                <span class="pill pill-muted">{{ pill }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  {% if page.footer_notes %}
+    <section class="bento-notes">
+      <div class="notes-card">
+        <p class="eyebrow">{{ page.footer_notes.eyebrow }}</p>
+        <h3>{{ page.footer_notes.title }}</h3>
+        <p class="hero-lede">{{ page.footer_notes.body }}</p>
+        {% if page.footer_notes.link %}
+          <a class="btn btn-ghost" href="{{ page.footer_notes.link }}">
+            {{ page.footer_notes.link_text | default: "Learn more" }}
+          </a>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+</main>
+
